@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Rubik Distressed', cursive;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 70px;
+            background-color: #F0F0F0;
+        }
+        .name{
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+        .koshelki{
+            margin-left: 100px;
+            margin-top: 50px;
+        }
+        .koshelok{
+            display: flex;
+            gap: 24px;
+        }
+        .item{
+            width: 282px;
+            height: 160px;
+            background: linear-gradient(84.37deg, #D7816A 2.27%, #BD4F6C 92.26%);
+            border-radius: 15px;
+            display: block;
+            align-items: flex-start;
+        }
+        .two{
+            background: linear-gradient(84.37deg, #5F0A87 2.27%, #A4508B 92.26%);
+        }
+        .three{
+            background: linear-gradient(84.37deg, #20BF55 2.27%, #01BAEF 92.26%);
+        }
+        .four{
+            background: linear-gradient(84.37deg, #380036 2.27%, #0CBABA 92.26%);
+        }
+        .rub{
+            margin-top: 90px;
+            margin-left: 10px;
+            color: white;
+        }
+        .span{
+            font-size: 24px;
+            margin-top: 10px;
+            margin-left: 15px;
+            color: white;
+        }
+        .tranzak{
+            margin-left: 100px;
+            margin-top: 60px;
+        }
+    </style>
+
+
+
+    <header>
+        <div class="texts">
+            <span>Главная</span>
+            <span>Мои кошельки</span>
+            <span>Мои транзакции</span>
+        </div>
+        <div class="akk">
+            <span>email</span>
+            <img src="./img/vixod.png" alt="">
+        </div>
+    </header>
+    <div class="name">
+        <h2>Добро пожаловать, Далер Шарифкулов!</h2><br>
+        <span style="color: #0047FF;">email</span>
+    </div>
+    <div class="koshelki">
+        <h4>Мои кошельки</h4><br><br>
+        <div class="koshelok">
+            <div class="item">
+                <div class="span">
+                    <span>Visa</span>
+                </div>
+                <div class="rub">
+                    <span>Rub</span>
+                </div>
+            </div>
+            <div class="item two">
+                <div class="span">
+                    <span>Visa</span>
+                </div>
+                <div class="rub">
+                    <span>Rub</span>
+                </div>
+            </div>    
+            <div class="item three">
+                <div class="span">
+                    <span>Visa</span>
+                </div>
+                <div class="rub">
+                    <span>Rub</span>
+                </div>
+            </div>    
+            <div class="item four">
+                <div class="span">
+                    <span>Visa</span>
+                </div>
+                <div class="rub">
+                    <span>Rub</span>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <div class="tranzak">
+        <h4>Последние транзакции</h4>
+
+
+    </div>
+</body>
+</html>
