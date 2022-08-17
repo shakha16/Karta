@@ -37,16 +37,20 @@
         }
     </style>
     <div class="regist">
-        <center>
-            <h1 style="font-size: 48px;">Регистрация</h1>
-            <input type="text" placeholder="Почта"><br><br>
-            <input type="text" placeholder="Имя"><br><br>
-            <input type="text" placeholder="Фамилия"><br><br>
-            <input type="password" placeholder="Пароль"> <br> <br>
-
-            <button>Продолжить</button> <br><br>
-            <span>Войти в аккаунт</span>
-        </center>
+        <form name="sign_up">
+            <center>
+                <h1 style="font-size: 48px;">Регистрация</h1>
+                <input type="text" placeholder="Почта" name="email"><br><br>
+                <input type="text" placeholder="Имя" name="name"><br><br>
+                <input type="text" placeholder="Фамилия" name="surname"><br><br>
+                <input type="password" placeholder="Пароль" name="password"> <br> <br>
+    
+                <button>Продолжить</button> <br><br>
+                <span>Войти в аккаунт</span>
+            </center>
+        </form>
     </div>
+
+    <script type="module" src="./index.js"></script>
 </body>
 </html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои транзакции</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Rubik Distressed', cursive;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            height: 70px;
+            background-color: #F0F0F0;
+        }
+
+        .name {
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 1050px;
+            border-collapse: collapse;
+            margin: 50px auto;
+        }
+
+        th {
+            color: #ccc;
+            font-weight: bold;
+        }
+
+        td,
+        th {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        /* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+        @media only screen and (max-width: 760px),
+        (min-device-width: 768px) and (max-device-width: 1024px) {
+
+            table {
+                width: 100%;
+            }
+
+            /* Force table to not be like tables anymore */
+            table,
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+            }
+
+            /* Hide table headers (but not display: none;, for accessibility) */
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                border: 1px solid #ccc;
+            }
+
+            td {
+                /* Behave  like a "row" */
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+            }
+
+            td:before {
+                /* Now like a table header */
+                position: absolute;
+                /* Top/left values mimic padding */
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                /* Label the data */
+                content: attr(data-column);
+
+                color: #000;
+                font-weight: bold;
+            }
+
+        }
+    </style>
+    <header>
+        <div class="texts">
+            <span>Главная</span>
+            <span>Мои кошельки</span>
+            <span>Мои транзакции</span>
+        </div>
+        <div class="akk">
+            <span class="email" >email</span>
+            <img src="./img/vixod.png" alt="">
+        </div>
+    </header>
+    <div class="name">
+        <h2>Мои транзакции</h2><br>
+        <span style="color: #0047FF;" class="email" >email</span>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Отправлено с кошелька</th>
+                    <th>Категория </th>
+                    <th>Сумма транзации</th>
+                    <th>Когда</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script type="module" src="../modules/transactions.js"></script>
+</body>
+
+</html>
