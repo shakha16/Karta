@@ -34,11 +34,18 @@
     </style>
     <div class="all">
         <center>
-            <h1>Добавить кошшелёк</h1>
-            <input type="text" placeholder="Имя"><br><br>
-            <input type="text" placeholder="Валюта"><br><br>
-            <button>Добавить</button>
+            <form name="newCard">
+                <h1>Добавить кошшелёк</h1>
+                <input type="text" placeholder="name of card" name="name" ><br><br>
+                <input type="number" placeholder="number" name="number" ><br><br>
+                <input type="date" placeholder="date" name="date" ><br><br>
+                <input type="text" placeholder="currency" name="currency" ><br><br>
+                <input type="number" placeholder="balance" name="balance" ><br><br>
+                <button>Добавить</button>
+            </form>
         </center>
     </div>
+
+    <script type="module" src="../modules/addNewCard.js"></script>
 </body>
 </html>

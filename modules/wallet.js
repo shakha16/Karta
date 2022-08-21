@@ -10,7 +10,4 @@ let emailTags = document.querySelectorAll('.email')
 let walletPlace = document.querySelector('.koshelok')
 emailTags.forEach(item => item.innerHTML = email)
 
-
-
-
 reload(cards, walletPlace)
