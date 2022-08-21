@@ -34,12 +34,18 @@
     </style>
     <div class="all">
         <center>
-            <h1>Добавить транзакцию</h1>
-            <input type="text" placeholder="Имя кошелька"><br><br>
-            <input type="text" placeholder="Сумма"><br><br>
-            <input type="text" placeholder="Категория"><br><br>
-            <button>Добавить</button>
+            <form >
+                <h1>Добавить транзакцию</h1>
+                <select  placeholder="Имя кошельки" name="card" >
+                </select>
+                <input type="text" placeholder="Сумма" name="total" ><br><br>
+                <input type="text" placeholder="Категория" name="category" ><br><br>
+                <button>Добавить</button>
+            </form>
         </center>
     </div>
+
+
+    <script type="module" src="../modules/addNewTran.js"></script>
 </body>
 </html>
